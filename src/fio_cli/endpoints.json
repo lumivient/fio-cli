@@ -1,0 +1,2819 @@
+[
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/admin/allusers",
+    "response_type": "list[str]",
+    "sdk_method": "admin_allusers_get_with_http_info",
+    "summary": "Retrieves a list of all usernames provided data from chat messages"
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/admin/clearcxdata",
+    "response_type": null,
+    "sdk_method": "admin_clearcxdata_post_with_http_info",
+    "summary": "Clears all CX Data"
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/admin/clearjumpcache",
+    "response_type": null,
+    "sdk_method": "admin_clearjumpcache_post_with_http_info",
+    "summary": "Clears all JumpCache Data"
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/admin/clearmatdata",
+    "response_type": null,
+    "sdk_method": "admin_clearmatdata_post_with_http_info",
+    "summary": "Clears all MAT Data"
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/admin/create",
+    "response_type": null,
+    "sdk_method": "admin_create_post_with_http_info",
+    "summary": "Creates an account"
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/admin/disable",
+    "response_type": null,
+    "sdk_method": "admin_disable_post_with_http_info",
+    "summary": "Disables an account"
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/admin/forceupdatesystemid",
+    "response_type": null,
+    "sdk_method": "admin_forceupdatesystemid_post_with_http_info",
+    "summary": "Force update system ids (manual upgrade path)"
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/admin",
+    "response_type": null,
+    "sdk_method": "admin_get_with_http_info",
+    "summary": "Check if the user is an administrator"
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/admin/requestdata",
+    "response_type": null,
+    "sdk_method": "admin_requestdata_get_with_http_info",
+    "summary": "Retrieves request data statistics for this run instance"
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/admin/resetuserdata/{UserName}",
+    "response_type": null,
+    "sdk_method": "admin_resetuserdata_user_name_post_with_http_info",
+    "summary": "Resets the provided username's userdata\""
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/admin/{UserName}",
+    "response_type": null,
+    "sdk_method": "admin_user_name_get_with_http_info",
+    "summary": "Checks if the UserName provided exists"
+  },
+  {
+    "api_class": "AdminApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/admin/usercount",
+    "response_type": "int",
+    "sdk_method": "admin_usercount_get_with_http_info",
+    "summary": "Retrieves a count of all usernames provided data from chat messages"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/auth/addpermission",
+    "response_type": null,
+    "sdk_method": "auth_addpermission_post_with_http_info",
+    "summary": "Add a permission allowance"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/auth/changepassword",
+    "response_type": null,
+    "sdk_method": "auth_changepassword_post_with_http_info",
+    "summary": "Changes the user's password"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/auth/createapikey",
+    "response_type": null,
+    "sdk_method": "auth_createapikey_post_with_http_info",
+    "summary": "Creates an API key"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/auth/creategroup",
+    "response_type": "AuthCreateGroupResponse",
+    "sdk_method": "auth_creategroup_post_with_http_info",
+    "summary": "Creates a group or modifies an existing group if GroupId is specified"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "group_id",
+        "required": true
+      }
+    ],
+    "path": "/auth/deletegroup/{GroupId}",
+    "response_type": null,
+    "sdk_method": "auth_deletegroup_group_id_post_with_http_info",
+    "summary": "Deletes a group you own by id"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/auth/deletepermission/{UserName}",
+    "response_type": null,
+    "sdk_method": "auth_deletepermission_user_name_post_with_http_info",
+    "summary": "Delete a permission allowance"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/auth",
+    "response_type": null,
+    "sdk_method": "auth_get_with_http_info",
+    "summary": "Determines if the user is authenticated"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "group_id",
+        "required": true
+      }
+    ],
+    "path": "/auth/group/{GroupId}",
+    "response_type": null,
+    "sdk_method": "auth_group_group_id_get_with_http_info",
+    "summary": "Retrieves group by GroupId"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/auth/groups",
+    "response_type": null,
+    "sdk_method": "auth_groups_get_with_http_info",
+    "summary": "Retrieves all groups owned by the current user"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/auth/listapikeys",
+    "response_type": null,
+    "sdk_method": "auth_listapikeys_post_with_http_info",
+    "summary": "Lists all API keys"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/auth/login",
+    "response_type": "AuthLoginResponse",
+    "sdk_method": "auth_login_post_with_http_info",
+    "summary": "Login to FIO"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/auth/permissions",
+    "response_type": "list[AuthPermissionAllowance]",
+    "sdk_method": "auth_permissions_get_with_http_info",
+    "summary": "Retrieves all permission allowances"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/auth/refreshauthtoken",
+    "response_type": null,
+    "sdk_method": "auth_refreshauthtoken_post_with_http_info",
+    "summary": "Refreshes the user's auth token"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/auth/revokeapikey",
+    "response_type": null,
+    "sdk_method": "auth_revokeapikey_post_with_http_info",
+    "summary": "Revokes an API key"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/auth/visibility",
+    "response_type": "list[AuthPermissionAllowance]",
+    "sdk_method": "auth_visibility_get_with_http_info",
+    "summary": "Retrieves all allowances given to the user"
+  },
+  {
+    "api_class": "AuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "permission_type",
+        "required": true
+      }
+    ],
+    "path": "/auth/visibility/{PermissionType}",
+    "response_type": "list[str]",
+    "sdk_method": "auth_visibility_permission_type_get_with_http_info",
+    "summary": "Retrieves all users where we have the permissionType specified given to us"
+  },
+  {
+    "api_class": "BuildingApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/building/allbuildings",
+    "response_type": null,
+    "sdk_method": "building_allbuildings_get_with_http_info",
+    "summary": "Gets a list of all buildings (WorldReactorData)."
+  },
+  {
+    "api_class": "BuildingApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "building_ticker",
+        "required": true
+      }
+    ],
+    "path": "/building/{BuildingTicker}",
+    "response_type": null,
+    "sdk_method": "building_building_ticker_get_with_http_info",
+    "summary": "Retrieve a payload describing the specified BuildingTicker"
+  },
+  {
+    "api_class": "BuildingApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/building",
+    "response_type": null,
+    "sdk_method": "building_post_with_http_info",
+    "summary": "Posts building game data (WorldReactorData) to the server.  For payload, see FIORest source"
+  },
+  {
+    "api_class": "ChatApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/chat/data",
+    "response_type": null,
+    "sdk_method": "chat_data_post_with_http_info",
+    "summary": "Posts the CHANNEL_DATA payload to the server.  For payload, see FIORest source"
+  },
+  {
+    "api_class": "ChatApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "channel_description",
+        "required": true
+      }
+    ],
+    "path": "/chat/display/{ChannelDescription}",
+    "response_type": null,
+    "sdk_method": "chat_display_channel_description_get_with_http_info",
+    "summary": "Retrieves the last 300 messages of the provided ChannelDescription"
+  },
+  {
+    "api_class": "ChatApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "channel_description",
+        "required": true
+      }
+    ],
+    "path": "/chat/display/pretty/{ChannelDescription}",
+    "response_type": null,
+    "sdk_method": "chat_display_pretty_channel_description_get_with_http_info",
+    "summary": "Retrieves the last 300 messages of the provided ChannelDescription in a 'pretty' (textual) format"
+  },
+  {
+    "api_class": "ChatApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/chat/list",
+    "response_type": "list[ChatListItem]",
+    "sdk_method": "chat_list_get_with_http_info",
+    "summary": "Retrieves a list of searchable channel names and their corresponding ChannelIds"
+  },
+  {
+    "api_class": "ChatApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/chat/message_added",
+    "response_type": null,
+    "sdk_method": "chat_message_added_post_with_http_info",
+    "summary": "Posts the CHANNEL_MESSAGE_ADDED payload to the server.  For payload, see FIORest source"
+  },
+  {
+    "api_class": "ChatApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/chat/message_deleted",
+    "response_type": null,
+    "sdk_method": "chat_message_deleted_post_with_http_info",
+    "summary": "Posts the CHANNEL_MESSAGE_DELETED payload to the server.  For payload, see FIORest source"
+  },
+  {
+    "api_class": "ChatApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/chat/message_list",
+    "response_type": null,
+    "sdk_method": "chat_message_list_post_with_http_info",
+    "summary": "Posts the CHANNEL_MESSAGE_LIST payload to the server.  For payload, see FIORest source"
+  },
+  {
+    "api_class": "CompanyApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "company_code",
+        "required": true
+      }
+    ],
+    "path": "/company/code/{CompanyCode}",
+    "response_type": null,
+    "sdk_method": "company_code_company_code_get_with_http_info",
+    "summary": "Retrieves company data by CompanyCode"
+  },
+  {
+    "api_class": "CompanyApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/company/data",
+    "response_type": null,
+    "sdk_method": "company_data_post_with_http_info",
+    "summary": "Posts COMPANY_DATA_DATA payload.  For payload, see FIORest source"
+  },
+  {
+    "api_class": "CompanyApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "company_name",
+        "required": true
+      }
+    ],
+    "path": "/company/name/{CompanyName}",
+    "response_type": null,
+    "sdk_method": "company_name_company_name_get_with_http_info",
+    "summary": "Retrieves company data by CompanyName"
+  },
+  {
+    "api_class": "CompanyApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/company",
+    "response_type": null,
+    "sdk_method": "company_post_with_http_info",
+    "summary": "Posts COMPANY_DATA payload.  For payload, see FIORest source"
+  },
+  {
+    "api_class": "ContractApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/contract/allcontracts",
+    "response_type": null,
+    "sdk_method": "contract_allcontracts_get_with_http_info",
+    "summary": "Retrieves most recent 100 contracts for the current user"
+  },
+  {
+    "api_class": "ContractApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/contract/allcontracts/{UserName}",
+    "response_type": null,
+    "sdk_method": "contract_allcontracts_user_name_get_with_http_info",
+    "summary": "Retrieves most recent 100 contracts for the given UserName"
+  },
+  {
+    "api_class": "ContractApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/contract/change",
+    "response_type": null,
+    "sdk_method": "contract_change_post_with_http_info",
+    "summary": "Posts CONTRACTS_CONTRACT payload. See FIORest source for payload definition"
+  },
+  {
+    "api_class": "ContractApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/contract/concerns",
+    "response_type": null,
+    "sdk_method": "contract_concerns_get_with_http_info",
+    "summary": "Retrieves contracts which can be extended or are within 1 day of ending"
+  },
+  {
+    "api_class": "ContractApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/contract/concerns/{UserName}",
+    "response_type": null,
+    "sdk_method": "contract_concerns_user_name_get_with_http_info",
+    "summary": "Retrieves concerning contracts for the given UserName"
+  },
+  {
+    "api_class": "ContractApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/contract/loans",
+    "response_type": null,
+    "sdk_method": "contract_loans_get_with_http_info",
+    "summary": "Retrieves loan contracts for the current user"
+  },
+  {
+    "api_class": "ContractApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/contract/loans/{UserName}",
+    "response_type": null,
+    "sdk_method": "contract_loans_user_name_get_with_http_info",
+    "summary": "Retrieves loan contracts for the given UserName"
+  },
+  {
+    "api_class": "ContractApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/contract",
+    "response_type": null,
+    "sdk_method": "contract_post_with_http_info",
+    "summary": "Posts CONTRACTS_CONTRACTS payload. See FIORest source for payload definition"
+  },
+  {
+    "api_class": "ContractApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/contract/shipments",
+    "response_type": null,
+    "sdk_method": "contract_shipments_get_with_http_info",
+    "summary": "Retrieves information on the location of your shipments"
+  },
+  {
+    "api_class": "ContractApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/contract/taco",
+    "response_type": null,
+    "sdk_method": "contract_taco_get_with_http_info",
+    "summary": "Retrieves taco statistics for EatTacos88"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/bids",
+    "response_type": null,
+    "sdk_method": "csv_bids_get_with_http_info",
+    "summary": "Price bid information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/buildingcosts",
+    "response_type": null,
+    "sdk_method": "csv_buildingcosts_get_with_http_info",
+    "summary": "Building cost information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/buildingrecipes",
+    "response_type": null,
+    "sdk_method": "csv_buildingrecipes_get_with_http_info",
+    "summary": "Building recipe information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/buildings",
+    "response_type": null,
+    "sdk_method": "csv_buildings_get_with_http_info",
+    "summary": "Building information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/buildingworkforces",
+    "response_type": null,
+    "sdk_method": "csv_buildingworkforces_get_with_http_info",
+    "summary": "Building workforce information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "apikey",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "username",
+        "required": true
+      }
+    ],
+    "path": "/csv/burnrate",
+    "response_type": null,
+    "sdk_method": "csv_burnrate_get_with_http_info",
+    "summary": "A specified user's burnrate"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "apikey",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "username",
+        "required": true
+      }
+    ],
+    "path": "/csv/cxos",
+    "response_type": null,
+    "sdk_method": "csv_cxos_get_with_http_info",
+    "summary": "A specified user's CXOS trades"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "ticker",
+        "required": true
+      }
+    ],
+    "path": "/csv/cxpc/{Ticker}",
+    "response_type": null,
+    "sdk_method": "csv_cxpc_ticker_get_with_http_info",
+    "summary": "CXPC data for a given ticker"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/infrastructure/allinfos",
+    "response_type": null,
+    "sdk_method": "csv_infrastructure_allinfos_get_with_http_info",
+    "summary": "All infrastructure infos"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/infrastructure/allreports",
+    "response_type": null,
+    "sdk_method": "csv_infrastructure_allreports_get_with_http_info",
+    "summary": "All infrastructure reports"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/csv/infrastructure/infos/{Planet}",
+    "response_type": null,
+    "sdk_method": "csv_infrastructure_infos_planet_get_with_http_info",
+    "summary": "Infrastructure infos for a given planet"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/csv/infrastructure/report/{Planet}",
+    "response_type": null,
+    "sdk_method": "csv_infrastructure_report_planet_get_with_http_info",
+    "summary": "Infrastructure report for a given planet"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "apikey",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "username",
+        "required": true
+      }
+    ],
+    "path": "/csv/inventory",
+    "response_type": null,
+    "sdk_method": "csv_inventory_get_with_http_info",
+    "summary": "A specified user's inventory"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/csv/localmarket/buy/{Planet}",
+    "response_type": null,
+    "sdk_method": "csv_localmarket_buy_planet_get_with_http_info",
+    "summary": "All buy ads on a given planet's LM"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/csv/localmarket/sell/{Planet}",
+    "response_type": null,
+    "sdk_method": "csv_localmarket_sell_planet_get_with_http_info",
+    "summary": "All sell ads on a given planet's LM"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/csv/localmarket/ship/{Planet}",
+    "response_type": null,
+    "sdk_method": "csv_localmarket_ship_planet_get_with_http_info",
+    "summary": "All shipping ads on a given planet's LM"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/materials",
+    "response_type": null,
+    "sdk_method": "csv_materials_get_with_http_info",
+    "summary": "Material information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/orders",
+    "response_type": null,
+    "sdk_method": "csv_orders_get_with_http_info",
+    "summary": "Price order information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/planetdetail",
+    "response_type": null,
+    "sdk_method": "csv_planetdetail_get_with_http_info",
+    "summary": "Detailed planet information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/planetproductionfees",
+    "response_type": null,
+    "sdk_method": "csv_planetproductionfees_get_with_http_info",
+    "summary": "Planet production fee information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/planetresources",
+    "response_type": null,
+    "sdk_method": "csv_planetresources_get_with_http_info",
+    "summary": "Planet resource information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/planets",
+    "response_type": null,
+    "sdk_method": "csv_planets_get_with_http_info",
+    "summary": "Planet information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/prices/condensed",
+    "response_type": null,
+    "sdk_method": "csv_prices_condensed_get_with_http_info",
+    "summary": "Price information (condensed horizontally)"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/prices",
+    "response_type": null,
+    "sdk_method": "csv_prices_get_with_http_info",
+    "summary": "Full price information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/recipeinputs",
+    "response_type": null,
+    "sdk_method": "csv_recipeinputs_get_with_http_info",
+    "summary": "Recipe input information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/recipeoutputs",
+    "response_type": null,
+    "sdk_method": "csv_recipeoutputs_get_with_http_info",
+    "summary": "Recipe output information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "apikey",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "username",
+        "required": true
+      }
+    ],
+    "path": "/csv/sites",
+    "response_type": null,
+    "sdk_method": "csv_sites_get_with_http_info",
+    "summary": "A specified user's sites"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/systemlinks",
+    "response_type": null,
+    "sdk_method": "csv_systemlinks_get_with_http_info",
+    "summary": "System links"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/systemplanets",
+    "response_type": null,
+    "sdk_method": "csv_systemplanets_get_with_http_info",
+    "summary": "System planet information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/csv/systems",
+    "response_type": null,
+    "sdk_method": "csv_systems_get_with_http_info",
+    "summary": "System information"
+  },
+  {
+    "api_class": "CsvApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "apikey",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "username",
+        "required": true
+      }
+    ],
+    "path": "/csv/workforce",
+    "response_type": null,
+    "sdk_method": "csv_workforce_get_with_http_info",
+    "summary": "A specified user's workforce information"
+  },
+  {
+    "api_class": "CxosApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/cxos/added",
+    "response_type": null,
+    "sdk_method": "cxos_added_post_with_http_info",
+    "summary": "Posts COMEX_TRADER_ORDER_ADDED data payload"
+  },
+  {
+    "api_class": "CxosApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/cxos",
+    "response_type": null,
+    "sdk_method": "cxos_post_with_http_info",
+    "summary": "Posts COMEX_TRADER_ORDERS data payload"
+  },
+  {
+    "api_class": "CxosApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/cxos/removed",
+    "response_type": null,
+    "sdk_method": "cxos_removed_post_with_http_info",
+    "summary": "Posts COMEX_TRADER_ORDER_REMOVED data payload"
+  },
+  {
+    "api_class": "CxosApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/cxos/updated",
+    "response_type": null,
+    "sdk_method": "cxos_updated_post_with_http_info",
+    "summary": "Posts COMEX_TRADER_ORDER_UPDATED data payload"
+  },
+  {
+    "api_class": "CxosApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/cxos/{UserName}",
+    "response_type": null,
+    "sdk_method": "cxos_user_name_get_with_http_info",
+    "summary": "Retrieves CXOS data for provided username.  See FIORest source for payload definition"
+  },
+  {
+    "api_class": "ExchangeApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/exchange/all",
+    "response_type": null,
+    "sdk_method": "exchange_all_get_with_http_info",
+    "summary": "Retrieves summarized information of all exchange data"
+  },
+  {
+    "api_class": "ExchangeApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "exchange_ticker",
+        "required": true
+      }
+    ],
+    "path": "/exchange/cxpc/{ExchangeTicker}",
+    "response_type": null,
+    "sdk_method": "exchange_cxpc_exchange_ticker_get_with_http_info",
+    "summary": "Retrieves exchange price chart data for the given ticker"
+  },
+  {
+    "api_class": "ExchangeApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "exchange_ticker",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "time_stamp",
+        "required": true
+      }
+    ],
+    "path": "/exchange/cxpc/{ExchangeTicker}/{TimeStamp}",
+    "response_type": null,
+    "sdk_method": "exchange_cxpc_exchange_ticker_time_stamp_get_with_http_info",
+    "summary": "Retrieves exchange price chart data for the given ticker"
+  },
+  {
+    "api_class": "ExchangeApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "exchange_ticker",
+        "required": true
+      }
+    ],
+    "path": "/exchange/{ExchangeTicker}",
+    "response_type": null,
+    "sdk_method": "exchange_exchange_ticker_get_with_http_info",
+    "summary": "Retrieves Exchange data for the provided ExchangeTicker"
+  },
+  {
+    "api_class": "ExchangeApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/exchange/full",
+    "response_type": null,
+    "sdk_method": "exchange_full_get_with_http_info",
+    "summary": "Retrieves all the exchange data, including order info"
+  },
+  {
+    "api_class": "ExchangeApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "company_code",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "exchange_code",
+        "required": true
+      }
+    ],
+    "path": "/exchange/orders/{CompanyCode}/{ExchangeCode}",
+    "response_type": null,
+    "sdk_method": "exchange_orders_company_code_exchange_code_get_with_http_info",
+    "summary": "Retrieves a provided company code's orders on all exchanges"
+  },
+  {
+    "api_class": "ExchangeApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "company_code",
+        "required": true
+      }
+    ],
+    "path": "/exchange/orders/{CompanyCode}",
+    "response_type": null,
+    "sdk_method": "exchange_orders_company_code_get_with_http_info",
+    "summary": "Retrieves a provided company code's orders on all exchanges"
+  },
+  {
+    "api_class": "ExchangeApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/exchange",
+    "response_type": null,
+    "sdk_method": "exchange_post_with_http_info",
+    "summary": "Posts COMEX_BROKER_DATA data payload"
+  },
+  {
+    "api_class": "ExchangeApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/exchange/station",
+    "response_type": null,
+    "sdk_method": "exchange_station_get_with_http_info",
+    "summary": "Retrieves all exchange station data"
+  },
+  {
+    "api_class": "GlobalApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/global/comexexchanges",
+    "response_type": null,
+    "sdk_method": "global_comexexchanges_get_with_http_info",
+    "summary": "Retrieves COMEX_EXCHANGE_LIST data"
+  },
+  {
+    "api_class": "GlobalApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/global/comexexchanges",
+    "response_type": null,
+    "sdk_method": "global_comexexchanges_post_with_http_info",
+    "summary": "Posts COMEX_EXCHANGE_LIST data"
+  },
+  {
+    "api_class": "GlobalApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/global/countries",
+    "response_type": null,
+    "sdk_method": "global_countries_get_with_http_info",
+    "summary": "Retrieves COUNTRY_REGISTRY_COUNTRIES data"
+  },
+  {
+    "api_class": "GlobalApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/global/countries",
+    "response_type": null,
+    "sdk_method": "global_countries_post_with_http_info",
+    "summary": "Posts COUNTRY_REGISTRY_COUNTRIES data"
+  },
+  {
+    "api_class": "GlobalApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/global/simulationdata",
+    "response_type": null,
+    "sdk_method": "global_simulationdata_get_with_http_info",
+    "summary": "Retrieves SIMULATION_DATA data"
+  },
+  {
+    "api_class": "GlobalApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/global/simulationdata",
+    "response_type": null,
+    "sdk_method": "global_simulationdata_post_with_http_info",
+    "summary": "Posts SIMULATION_DATA data"
+  },
+  {
+    "api_class": "GlobalApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/global/workforceneeds",
+    "response_type": null,
+    "sdk_method": "global_workforceneeds_get_with_http_info",
+    "summary": "Retrieves workforce needs"
+  },
+  {
+    "api_class": "InfrastructureApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet_or_infrastructure_id",
+        "required": true
+      }
+    ],
+    "path": "/infrastructure/{PlanetOrInfrastructureId}",
+    "response_type": null,
+    "sdk_method": "infrastructure_planet_or_infrastructure_id_get_with_http_info",
+    "summary": "Retrieves infrastucture payload for the given PlanetOrInfrastructureId"
+  },
+  {
+    "api_class": "InfrastructureApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/infrastructure",
+    "response_type": null,
+    "sdk_method": "infrastructure_post_with_http_info",
+    "summary": "Posts INFRASTRUCTURE_DATA_DATA data payload"
+  },
+  {
+    "api_class": "InfrastructureApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/infrastructure/project",
+    "response_type": null,
+    "sdk_method": "infrastructure_project_post_with_http_info",
+    "summary": "Posts INFRASTRUCTURE_PROJECTS_DATA data payload"
+  },
+  {
+    "api_class": "LocalmarketApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "company",
+        "required": true
+      }
+    ],
+    "path": "/localmarket/company/{Company}",
+    "response_type": null,
+    "sdk_method": "localmarket_company_company_get_with_http_info",
+    "summary": "Retrieves all ads found by specified Company"
+  },
+  {
+    "api_class": "LocalmarketApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "local_market_id",
+        "required": true
+      }
+    ],
+    "path": "/localmarket/{LocalMarketId}",
+    "response_type": null,
+    "sdk_method": "localmarket_local_market_id_get_with_http_info",
+    "summary": "Retrieves LocalMarket data for the provided LocalMarketId"
+  },
+  {
+    "api_class": "LocalmarketApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/localmarket/planet/{Planet}",
+    "response_type": null,
+    "sdk_method": "localmarket_planet_planet_get_with_http_info",
+    "summary": "Retrieves LocalMarket data for provided Planet"
+  },
+  {
+    "api_class": "LocalmarketApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "type",
+        "required": true
+      }
+    ],
+    "path": "/localmarket/planet/{Planet}/{Type}",
+    "response_type": null,
+    "sdk_method": "localmarket_planet_planet_type_get_with_http_info",
+    "summary": "Retrieves LocalMarket data for provided Planet and specified type"
+  },
+  {
+    "api_class": "LocalmarketApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/localmarket",
+    "response_type": null,
+    "sdk_method": "localmarket_post_with_http_info",
+    "summary": "Posts LOCAL_MARKET_DATA_DATA data payload"
+  },
+  {
+    "api_class": "LocalmarketApi",
+    "auth": [],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/localmarket/search",
+    "response_type": null,
+    "sdk_method": "localmarket_search_post_with_http_info",
+    "summary": "Searches all local markets for a given material"
+  },
+  {
+    "api_class": "LocalmarketApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "destination_planet",
+        "required": true
+      }
+    ],
+    "path": "/localmarket/shipping/destination/{DestinationPlanet}",
+    "response_type": null,
+    "sdk_method": "localmarket_shipping_destination_destination_planet_get_with_http_info",
+    "summary": "Retrieves shipping LocalMarket data for the provided Planet where the drop-off location is DestinationPlanet"
+  },
+  {
+    "api_class": "LocalmarketApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "source_planet",
+        "required": true
+      }
+    ],
+    "path": "/localmarket/shipping/source/{SourcePlanet}",
+    "response_type": null,
+    "sdk_method": "localmarket_shipping_source_source_planet_get_with_http_info",
+    "summary": "Retrieves shipping LocalMarket data for the provided Planet where the pick-up location is SourcePlanet"
+  },
+  {
+    "api_class": "MaterialApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/material/allmaterials",
+    "response_type": null,
+    "sdk_method": "material_allmaterials_get_with_http_info",
+    "summary": "Retrieves all materials.  See FIORest source for payload definition"
+  },
+  {
+    "api_class": "MaterialApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "category_name",
+        "required": true
+      }
+    ],
+    "path": "/material/category/{CategoryName}",
+    "response_type": null,
+    "sdk_method": "material_category_category_name_get_with_http_info",
+    "summary": "Retrieves all materials that belong to the provided CategoryName. See FIORest source for payload definition"
+  },
+  {
+    "api_class": "MaterialApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "material_ticker",
+        "required": true
+      }
+    ],
+    "path": "/material/{MaterialTicker}",
+    "response_type": null,
+    "sdk_method": "material_material_ticker_get_with_http_info",
+    "summary": "Retrieves an individual material by Ticker.  See FIORest source for payload definition"
+  },
+  {
+    "api_class": "MaterialApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/material",
+    "response_type": null,
+    "sdk_method": "material_post_with_http_info",
+    "summary": "Posts WORLD_MATERIAL_CATEGORIES payload"
+  },
+  {
+    "api_class": "PermissionBuildingApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/rain/userplanetbuildingreclaimables/{UserName}",
+    "response_type": "list[RainPlanetBuildingReclaimable]",
+    "sdk_method": "rain_userplanetbuildingreclaimables_user_name_get_with_http_info",
+    "summary": "Retrieves planet building reclaimables for the given UserName"
+  },
+  {
+    "api_class": "PermissionBuildingApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/rain/userplanetbuildings/{UserName}",
+    "response_type": "list[RainPlanetBuilding]",
+    "sdk_method": "rain_userplanetbuildings_user_name_get_with_http_info",
+    "summary": "Retrieves planet buildings for the given UserName"
+  },
+  {
+    "api_class": "PermissionBuildingApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/sites/planets/{UserName}",
+    "response_type": "list[str]",
+    "sdk_method": "sites_planets_user_name_get_with_http_info",
+    "summary": "Retrieves list of planets user has site data for"
+  },
+  {
+    "api_class": "PermissionBuildingApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/sites/{UserName}",
+    "response_type": null,
+    "sdk_method": "sites_user_name_get_with_http_info",
+    "summary": "Retrieves site data"
+  },
+  {
+    "api_class": "PermissionBuildingApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/sites/{UserName}/{Planet}",
+    "response_type": null,
+    "sdk_method": "sites_user_name_planet_get_with_http_info",
+    "summary": "Retrieves list of planets user has site data for"
+  },
+  {
+    "api_class": "PermissionBuildingApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/sites/warehouses/{UserName}",
+    "response_type": null,
+    "sdk_method": "sites_warehouses_user_name_get_with_http_info",
+    "summary": "Retrieves all warehouse sites the user has"
+  },
+  {
+    "api_class": "PermissionFlightApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/ship/flights/{UserName}",
+    "response_type": null,
+    "sdk_method": "ship_flights_user_name_get_with_http_info",
+    "summary": "Retrieves ship flight data"
+  },
+  {
+    "api_class": "PermissionFlightApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/ship/ships/fuel/{UserName}",
+    "response_type": null,
+    "sdk_method": "ship_ships_fuel_user_name_get_with_http_info",
+    "summary": "Retrieves ship fuel store data"
+  },
+  {
+    "api_class": "PermissionFlightApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/ship/ships/{UserName}",
+    "response_type": null,
+    "sdk_method": "ship_ships_user_name_get_with_http_info",
+    "summary": "Retrieves ship data"
+  },
+  {
+    "api_class": "PermissionProductionApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/production/planets/{UserName}",
+    "response_type": "list[str]",
+    "sdk_method": "production_planets_user_name_get_with_http_info",
+    "summary": "Retrieve all the planets where production lines are present for the provided UserName"
+  },
+  {
+    "api_class": "PermissionProductionApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/production/{UserName}",
+    "response_type": null,
+    "sdk_method": "production_user_name_get_with_http_info",
+    "summary": "Retrieve all production lines for provided UserName"
+  },
+  {
+    "api_class": "PermissionProductionApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/production/{UserName}/{Planet}",
+    "response_type": "list[object]",
+    "sdk_method": "production_user_name_planet_get_with_http_info",
+    "summary": "Retrieve production line for the given UserName on the specified Planet"
+  },
+  {
+    "api_class": "PermissionProductionApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/rain/userplanetproduction/{UserName}",
+    "response_type": "list[RainPlanetProduction]",
+    "sdk_method": "rain_userplanetproduction_user_name_get_with_http_info",
+    "summary": "Retrieves planet production for the given UserName"
+  },
+  {
+    "api_class": "PermissionProductionApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/rain/userplanetproductioninput/{UserName}",
+    "response_type": "list[RainPlanetProductionInput]",
+    "sdk_method": "rain_userplanetproductioninput_user_name_get_with_http_info",
+    "summary": "Retrieves planet production inputs for the given UserName"
+  },
+  {
+    "api_class": "PermissionProductionApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/rain/userplanetproductionoutput/{UserName}",
+    "response_type": "list[RainPlanetProductionOutput]",
+    "sdk_method": "rain_userplanetproductionoutput_user_name_get_with_http_info",
+    "summary": "Retrieves planet production outputs for the given UserName"
+  },
+  {
+    "api_class": "PermissionStorageApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/rain/userliquid/{UserName}",
+    "response_type": "list[RainLiquid]",
+    "sdk_method": "rain_userliquid_user_name_get_with_http_info",
+    "summary": "Retrieves liquid asset data for the given UserName"
+  },
+  {
+    "api_class": "PermissionStorageApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/rain/userplanets/{UserName}",
+    "response_type": "list[RainUserPlanet]",
+    "sdk_method": "rain_userplanets_user_name_get_with_http_info",
+    "summary": "Retrieves planets for the given UserName"
+  },
+  {
+    "api_class": "PermissionStorageApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/rain/userstorage/{UserName}",
+    "response_type": "list[RainStorage]",
+    "sdk_method": "rain_userstorage_user_name_get_with_http_info",
+    "summary": "Retrieves planet production workforces for the given UserName"
+  },
+  {
+    "api_class": "PermissionStorageApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/storage/planets/{UserName}",
+    "response_type": "list[str]",
+    "sdk_method": "storage_planets_user_name_get_with_http_info",
+    "summary": "Retrieves list of Planets where storage data exists for UserName"
+  },
+  {
+    "api_class": "PermissionStorageApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/storage/{UserName}",
+    "response_type": null,
+    "sdk_method": "storage_user_name_get_with_http_info",
+    "summary": "Retrieves storage data"
+  },
+  {
+    "api_class": "PermissionStorageApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "storage_description",
+        "required": true
+      }
+    ],
+    "path": "/storage/{UserName}/{StorageDescription}",
+    "response_type": null,
+    "sdk_method": "storage_user_name_storage_description_get_with_http_info",
+    "summary": "Retrieves list of Planets where storage data exists for UserName"
+  },
+  {
+    "api_class": "PermissionStorageApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/usersettings/burnrate/{UserName}",
+    "response_type": null,
+    "sdk_method": "usersettings_burnrate_user_name_get_with_http_info",
+    "summary": "Retrieves BurnRateSettings for the specified user"
+  },
+  {
+    "api_class": "PermissionStorageApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "planet_natural_id",
+        "required": true
+      }
+    ],
+    "path": "/usersettings/burnrate/{UserName}/{PlanetNaturalId}",
+    "response_type": null,
+    "sdk_method": "usersettings_burnrate_user_name_planet_natural_id_get_with_http_info",
+    "summary": "Retrivies BurnRateSettings for the specified user on the specified planet"
+  },
+  {
+    "api_class": "PermissionWorkforceApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/rain/userplanetworkforce/{UserName}",
+    "response_type": "list[RainPlanetWorkforce]",
+    "sdk_method": "rain_userplanetworkforce_user_name_get_with_http_info",
+    "summary": "Retrieves planet production workforces for the given UserName"
+  },
+  {
+    "api_class": "PermissionWorkforceApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/workforce/planets/{UserName}",
+    "response_type": "list[str]",
+    "sdk_method": "workforce_planets_user_name_get_with_http_info",
+    "summary": "Retrieves list of planets where the specified user has Workforce data"
+  },
+  {
+    "api_class": "PermissionWorkforceApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/workforce/{UserName}",
+    "response_type": null,
+    "sdk_method": "workforce_user_name_get_with_http_info",
+    "summary": "Retrieves workforce data for the specified user"
+  },
+  {
+    "api_class": "PermissionWorkforceApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/workforce/{UserName}/{Planet}",
+    "response_type": null,
+    "sdk_method": "workforce_user_name_planet_get_with_http_info",
+    "summary": "Retrieves workforce data for the specified usernaem and planet"
+  },
+  {
+    "api_class": "PlanetApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/planet/allplanets/full",
+    "response_type": null,
+    "sdk_method": "planet_allplanets_full_get_with_http_info",
+    "summary": "Retrieves all planet data for all planets"
+  },
+  {
+    "api_class": "PlanetApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/planet/allplanets",
+    "response_type": "list[PlanetListItem]",
+    "sdk_method": "planet_allplanets_get_with_http_info",
+    "summary": "Retrieves a list of all planets (minimal payload)"
+  },
+  {
+    "api_class": "PlanetApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/planet/cogc",
+    "response_type": null,
+    "sdk_method": "planet_cogc_post_with_http_info",
+    "summary": "Posts PLANET_COGC_DATA payload"
+  },
+  {
+    "api_class": "PlanetApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/planet/{Planet}",
+    "response_type": null,
+    "sdk_method": "planet_planet_get_with_http_info",
+    "summary": "Retrieves planet payload.  See FIORest for payload definition"
+  },
+  {
+    "api_class": "PlanetApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/planet",
+    "response_type": null,
+    "sdk_method": "planet_post_with_http_info",
+    "summary": "Posts PLANET_DATA_DATA payload"
+  },
+  {
+    "api_class": "PlanetApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/planet/search",
+    "response_type": null,
+    "sdk_method": "planet_search_post_with_http_info",
+    "summary": "Searches for a planet given the parameters in the payload"
+  },
+  {
+    "api_class": "PlanetApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/planet/sites/{Planet}",
+    "response_type": null,
+    "sdk_method": "planet_sites_planet_get_with_http_info",
+    "summary": "Retrieves the planet sites payload.  See FIORest for payload definition"
+  },
+  {
+    "api_class": "PlanetApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/planet/sites",
+    "response_type": null,
+    "sdk_method": "planet_sites_post_with_http_info",
+    "summary": "Posts PLANET_SITES payload"
+  },
+  {
+    "api_class": "PlanetApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "planet",
+        "required": true
+      }
+    ],
+    "path": "/planet/sitescount/{Planet}",
+    "response_type": null,
+    "sdk_method": "planet_sitescount_planet_get_with_http_info",
+    "summary": "Retrieves the number of planet sites for the provided Planet"
+  },
+  {
+    "api_class": "ProductionApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/production",
+    "response_type": null,
+    "sdk_method": "production_post_with_http_info",
+    "summary": "Posts PRODUCTION_SITE_PRODUCTION_LINES payload"
+  },
+  {
+    "api_class": "RainApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/rain/buildingcosts",
+    "response_type": "list[RainBuildingCost]",
+    "sdk_method": "rain_buildingcosts_get_with_http_info",
+    "summary": "Retrieves all building cost data (normalized)"
+  },
+  {
+    "api_class": "RainApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/rain/buildingrecipes",
+    "response_type": "list[RainBuildingRecipe]",
+    "sdk_method": "rain_buildingrecipes_get_with_http_info",
+    "summary": "Retrieves all building recipe data (normalized)"
+  },
+  {
+    "api_class": "RainApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/rain/buildings",
+    "response_type": "list[RainBuilding]",
+    "sdk_method": "rain_buildings_get_with_http_info",
+    "summary": "Retrieves all building data"
+  },
+  {
+    "api_class": "RainApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/rain/buildingworkforces",
+    "response_type": "list[RainBuildingWorkforce]",
+    "sdk_method": "rain_buildingworkforces_get_with_http_info",
+    "summary": "Retrieves all building workforce data (normalized)"
+  },
+  {
+    "api_class": "RainApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/rain/materials",
+    "response_type": "list[RainMaterial]",
+    "sdk_method": "rain_materials_get_with_http_info",
+    "summary": "Retrieves all material data"
+  },
+  {
+    "api_class": "RainApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/rain/planetresources",
+    "response_type": "list[RainPlanetResource]",
+    "sdk_method": "rain_planetresources_get_with_http_info",
+    "summary": "Retrieves all planet resource data (normalized)"
+  },
+  {
+    "api_class": "RainApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/rain/prices",
+    "response_type": "list[RainPrices]",
+    "sdk_method": "rain_prices_get_with_http_info",
+    "summary": "Retrieves all CX price data"
+  },
+  {
+    "api_class": "RainApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/rain/recipeinputs",
+    "response_type": "list[RainRecipeInput]",
+    "sdk_method": "rain_recipeinputs_get_with_http_info",
+    "summary": "Retrieves all recipe input data (normalized)"
+  },
+  {
+    "api_class": "RainApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/rain/recipeoutputs",
+    "response_type": "list[RainRecipeOutput]",
+    "sdk_method": "rain_recipeoutputs_get_with_http_info",
+    "summary": "Retrieves all recipe output data (normalized)"
+  },
+  {
+    "api_class": "RecipesApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/recipes/allrecipes",
+    "response_type": "list[RecipeMinimalRecipe]",
+    "sdk_method": "recipes_allrecipes_get_with_http_info",
+    "summary": "Retrieve all recipes"
+  },
+  {
+    "api_class": "RecipesApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "ticker",
+        "required": true
+      }
+    ],
+    "path": "/recipes/{Ticker}",
+    "response_type": null,
+    "sdk_method": "recipes_ticker_get_with_http_info",
+    "summary": "Retrieves the recipes for a given ticker"
+  },
+  {
+    "api_class": "RequiresAdminAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/systemstars",
+    "response_type": null,
+    "sdk_method": "systemstars_post_with_http_info",
+    "summary": "Posts SYSTEM_STARS_DATA payload"
+  },
+  {
+    "api_class": "RequiresAdminAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/systemstars/worldsectors",
+    "response_type": null,
+    "sdk_method": "systemstars_worldsectors_post_with_http_info",
+    "summary": "Posts WORLD_SECTORS payload"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/ship/flights",
+    "response_type": null,
+    "sdk_method": "ship_flights_post_with_http_info",
+    "summary": "Posts SHIP_FLIGHT_FLIGHTS payload"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/ship/ships",
+    "response_type": null,
+    "sdk_method": "ship_ships_post_with_http_info",
+    "summary": "Posts SHIP_SHIPS payload"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/sites",
+    "response_type": null,
+    "sdk_method": "sites_post_with_http_info",
+    "summary": "Posts SITE_SITES payload"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/sites/warehouses",
+    "response_type": null,
+    "sdk_method": "sites_warehouses_post_with_http_info",
+    "summary": "Posts STORAGE_WAREHOUSES payload"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/storage/change",
+    "response_type": null,
+    "sdk_method": "storage_change_post_with_http_info",
+    "summary": "Posts STORAGE_CHANGE payload"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/storage",
+    "response_type": null,
+    "sdk_method": "storage_post_with_http_info",
+    "summary": "Posts STORAGE_STORAGES payload"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/systemstars/star",
+    "response_type": null,
+    "sdk_method": "systemstars_star_post_with_http_info",
+    "summary": "Posts SYSTEM_STAR data"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/user/allusers",
+    "response_type": "list[str]",
+    "sdk_method": "user_allusers_get_with_http_info",
+    "summary": "Retrieves all FIO users"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/user",
+    "response_type": null,
+    "sdk_method": "user_post_with_http_info",
+    "summary": "Posts USER_DATA payload"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/user/resetalldata",
+    "response_type": null,
+    "sdk_method": "user_resetalldata_post_with_http_info",
+    "summary": "Resets the current user's data."
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/user/{UserName}",
+    "response_type": null,
+    "sdk_method": "user_user_name_get_with_http_info",
+    "summary": "Retrieves userdata for specified UserName"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/usersettings/burnrate/addexclusion",
+    "response_type": null,
+    "sdk_method": "usersettings_burnrate_addexclusion_post_with_http_info",
+    "summary": "Adds a BurnRateExclusion"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [],
+    "method": "POST",
+    "params": [
+      {
+        "in": "path",
+        "name": "body",
+        "required": true
+      }
+    ],
+    "path": "/usersettings/burnrate/deleteexclusion",
+    "response_type": null,
+    "sdk_method": "usersettings_burnrate_deleteexclusion_post_with_http_info",
+    "summary": "Deletes a BurnRateExclusion"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/usersettings/burnrate/redthreshold",
+    "response_type": null,
+    "sdk_method": "usersettings_burnrate_redthreshold_post_with_http_info",
+    "summary": "Currently unused.  Will be used in the future"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/usersettings/burnrate/yellowthreshold",
+    "response_type": null,
+    "sdk_method": "usersettings_burnrate_yellowthreshold_post_with_http_info",
+    "summary": "Currently unused.  Will be used in the future"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/usersettings/general",
+    "response_type": null,
+    "sdk_method": "usersettings_general_get_with_http_info",
+    "summary": "Currently unused.  Will be used in the future"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/usersettings/general",
+    "response_type": null,
+    "sdk_method": "usersettings_general_post_with_http_info",
+    "summary": "Currently unused.  Will be used in the future"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "user_name",
+        "required": true
+      }
+    ],
+    "path": "/usersettings/general/{UserName}",
+    "response_type": null,
+    "sdk_method": "usersettings_general_user_name_get_with_http_info",
+    "summary": "Currently unused.  Will be used in the future"
+  },
+  {
+    "api_class": "RequiresAuthApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "POST",
+    "params": [],
+    "path": "/workforce",
+    "response_type": null,
+    "sdk_method": "workforce_post_with_http_info",
+    "summary": "Posts WORKFORCE_WORKFORCES payload"
+  },
+  {
+    "api_class": "SystemstarsApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/systemstars",
+    "response_type": null,
+    "sdk_method": "systemstars_get_with_http_info",
+    "summary": "Retrieves system star data"
+  },
+  {
+    "api_class": "SystemstarsApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "source",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "destination",
+        "required": true
+      }
+    ],
+    "path": "/systemstars/jumpcount/{Source}/{Destination}",
+    "response_type": "int",
+    "sdk_method": "systemstars_jumpcount_source_destination_get_with_http_info",
+    "summary": "Retrieves jump count from source to destination specified"
+  },
+  {
+    "api_class": "SystemstarsApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "source",
+        "required": true
+      },
+      {
+        "in": "path",
+        "name": "destination",
+        "required": true
+      }
+    ],
+    "path": "/systemstars/jumproute/{Source}/{Destination}",
+    "response_type": "list[SystemStarsJumpRoute]",
+    "sdk_method": "systemstars_jumproute_source_destination_get_with_http_info",
+    "summary": "Retrieves jump route from source to destination specified"
+  },
+  {
+    "api_class": "SystemstarsApi",
+    "auth": [],
+    "method": "GET",
+    "params": [
+      {
+        "in": "path",
+        "name": "star",
+        "required": true
+      }
+    ],
+    "path": "/systemstars/star/{Star}",
+    "response_type": null,
+    "sdk_method": "systemstars_star_star_get_with_http_info",
+    "summary": "Retrieves SYSTEM_STAR data provided a Star definition"
+  },
+  {
+    "api_class": "SystemstarsApi",
+    "auth": [
+      "api_key"
+    ],
+    "method": "GET",
+    "params": [],
+    "path": "/systemstars/worldsectors",
+    "response_type": null,
+    "sdk_method": "systemstars_worldsectors_get_with_http_info",
+    "summary": "Retrieves world sector data"
+  },
+  {
+    "api_class": "VersionApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/version/download",
+    "response_type": null,
+    "sdk_method": "version_download_get_with_http_info",
+    "summary": "Retrieves latest FIOUI setup executable"
+  },
+  {
+    "api_class": "VersionApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/version/extension/download",
+    "response_type": null,
+    "sdk_method": "version_extension_download_get_with_http_info",
+    "summary": "Redirects you to to the FIO Chrome Extension page"
+  },
+  {
+    "api_class": "VersionApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/version/extension/script",
+    "response_type": null,
+    "sdk_method": "version_extension_script_get_with_http_info",
+    "summary": "Retrieves the latest version of the FIO uploader script"
+  },
+  {
+    "api_class": "VersionApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/version/latest",
+    "response_type": "str",
+    "sdk_method": "version_latest_get_with_http_info",
+    "summary": "Retrieves latest version number of the FIOUI"
+  },
+  {
+    "api_class": "VersionApi",
+    "auth": [],
+    "method": "GET",
+    "params": [],
+    "path": "/version/releasenotes",
+    "response_type": null,
+    "sdk_method": "version_releasenotes_get_with_http_info",
+    "summary": "Retrieves latest version release notes of the FIOUI as an rtf file"
+  }
+]
